@@ -3,13 +3,19 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 
-from store.models import Product, Collection, OrderItem
-from store.serializers import ProductSerializer, CollectionSerializer
+from store.models import Product, Collection, OrderItem, Review
+from store.serializers import ProductSerializer, CollectionSerializer, ReviewSerializer
 
 
 class ProductViewSet(ModelViewSet):
-    queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+    def get_queryset(self):
+        queryset = Product.objects.all()
+        collection_id = self.request.query_params.get('collection_id')
+        if collection_id is not None:
+            queryset = queryset.filter(collection_id=collection_id)
+        return queryset
 
     def get_serializer_context(self):
         return {'request': self.request}
@@ -135,6 +141,7 @@ class CollectionViewSet(ModelViewSet):
                             status=status.HTTP_405_METHOD_NOT_ALLOWED)
         return super().destroy(request, *args, **kwargs)
 
+
 # class CollectionList(ListCreateAPIView):
 #     queryset = Collection.objects.annotate(products_count=Count('products'))
 #     serializer_class = CollectionSerializer
@@ -170,3 +177,12 @@ class CollectionViewSet(ModelViewSet):
 #                             status=status.HTTP_405_METHOD_NOT_ALLOWED)
 #         collection.delete()
 #         return Response(status=status.HTTP_204_NO_CONTENT)
+
+class ReviewViewSet(ModelViewSet):
+    serializer_class = ReviewSerializer
+
+    def get_queryset(self):
+        return Review.objects.filter(product_id=self.kwargs['product_pk'])
+
+    def get_serializer_context(self):
+        return {'product_id': self.kwargs['product_pk']}
