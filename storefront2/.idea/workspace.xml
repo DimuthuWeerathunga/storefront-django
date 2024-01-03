@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="168491b3-a110-4e0f-8eca-8b1ad631258b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4116e8b-68f3-4d88-b0be-679eeedf2acd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f4116e8b-68f3-4d88-b0be-679eeedf2acd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.local/share/virtualenvs/storefront-TpvBWP8g/lib/python3.10/site-packages/django/db/models/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/.local/share/virtualenvs/storefront2-A2KU5ibi/lib/python3.10/site-packages/django/db/models/base.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/.local/share/virtualenvs/storefront2-A2KU5ibi/lib/python3.10/site-packages/django/db/models/manager.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/.local/share/virtualenvs/storefront2-A2KU5ibi/lib/python3.10/site-packages/rest_framework/viewsets.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,12 +43,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/dimuthu/Documents/tutorials/django-storefront/storefront2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/dimuthu/.nvm/versions/node/v16.17.1/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -53,7 +60,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Django Server.storefront">
+  <component name="RunManager" selected="Django Server.storefront2">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="storefront" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,6 +107,29 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="storefront2" type="Python.DjangoServer" factoryName="Django server">
+      <module name="storefront2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,7 +154,12 @@
       <workItem from="1674919126519" duration="599000" />
       <workItem from="1675367368379" duration="8340000" />
       <workItem from="1675424510210" duration="1122000" />
-      <workItem from="1675426106469" duration="30354000" />
+      <workItem from="1675426106469" duration="39174000" />
+      <workItem from="1678039115786" duration="2465000" />
+      <workItem from="1679592601981" duration="615000" />
+      <workItem from="1681999830598" duration="34000" />
+      <workItem from="1681999873921" duration="38000" />
+      <workItem from="1682002564298" duration="643000" />
     </task>
     <servers />
   </component>
